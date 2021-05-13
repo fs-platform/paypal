@@ -1,0 +1,42 @@
+{
+  "name": "smbear/paypal",
+  "description": "paypal",
+  "keywords": [
+    "paypal"
+  ],
+  "homepage": "https://github.com/smbear/paypal",
+  "license": "MIT",
+  "type": "library",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "smile",
+      "email":"ywjmylove@163.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php":"^7.4",
+    "paypal/paypal-checkout-sdk": "^1.0.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Smbear\\Paypal\\": "src"
+    },
+    "files": [
+      "helper/function.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Smbear\\Paypal\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Smbear\\Paypal\\AppServiceProvider"
+      ]
+    }
+  }
+}
